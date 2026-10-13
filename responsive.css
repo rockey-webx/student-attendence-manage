@@ -1,0 +1,206 @@
+/* =========================================
+   COMMON RESPONSIVE DESIGN
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+    max-width: 100%;
+    font-size: 16px;
+}
+
+/* =========================================
+   COMMON CONTAINERS
+========================================= */
+
+.container {
+    width: 94%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================================
+   TOP BUTTONS
+========================================= */
+
+.top-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.top-buttons a {
+    white-space: nowrap;
+}
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-box {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+.login-box {
+    width: min(92%, 400px);
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    width: 100%;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .header {
+        gap: 12px;
+    }
+
+    .filter-form {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .top-buttons {
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+
+    .top-buttons a {
+        flex: 1;
+        min-width: 110px;
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .filter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .field {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .search-btn,
+    .reset-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .table-box {
+        overflow-x: auto;
+    }
+
+    .table-box table {
+        min-width: 850px;
+    }
+
+    .login-box {
+        margin: 50px auto;
+        padding: 22px;
+    }
+
+    input,
+    select,
+    button {
+        min-height: 44px;
+    }
+}
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .top-buttons {
+        flex-direction: column;
+    }
+
+    .top-buttons a {
+        width: 100%;
+    }
+
+}
